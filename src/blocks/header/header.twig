@@ -1,0 +1,224 @@
+<header class="header">
+	<span class="header-top__line"></span>
+
+	<div class="container">
+		<div class="header-top">
+			<div class="header-top__wrapper">
+				<div class="header-top__location">
+					<div class="header-top__location-img">
+						{% include '@assets/svg/location.svg' %}
+					</div>
+					<span class="header-top__location-text">Москва</span>
+				</div>
+
+				<div class="header-top__menu">
+					<ul class="header-top__menu-list">
+						<li class="header-top__menu-link">
+							<div class="header-top__menu-link--img">
+								{% include '@assets/svg/delivery.svg' %}
+							</div>
+							<p class="header-top__menu-link--text">
+								Доставка и оплата
+							</p>
+						</li>
+						<li class="header-top__menu-link">
+							<div class="header-top__menu-link--img">
+								{% include '@assets/svg/opening-hours.svg' %}
+							</div>
+							<p class="header-top__menu-link--text">
+								Адрес и часы работы
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="header-top__contacts">
+					<ul class="header-top__contacts-list">
+						<li class="header-top__contacts-link">
+							<div class="header-top__contacts-link--img">
+								{% include '@assets/svg/mail.svg' %}
+							</div>
+							<p class="header-top__contacts-link--text">
+								market@estatut.ru
+							</p>
+						</li>
+						<li class="header-top__contacts-link">
+							<div class="header-top__contacts-link--img">
+								{% include '@assets/svg/call.svg' %}
+							</div>
+							<p class="header-top__contacts-link--text">
+								8 (968) 660-65-50
+							</p>
+							<div class="header-top__contacts-link--info">
+								{% include '@assets/svg/info.svg' %}
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-center">
+			<div class="header-center__logo">
+				<img src="./img/logo.png" alt="Logo" class="header-center__logo-img">
+			</div>
+			<div class="header-center__search">
+				<div class="header-search__modal">
+					<div class="search-modal__books">
+						<p class="search-modal__books-title">Книги</p>
+						<ul class="search-modal__books-list">
+							<li class="search-modal__books-link">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									право Российской Федерации: Общая часть
+								</span>
+							</li>
+							<li class="search-modal__books-link">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									право России. Часть первая : практикум
+								</span>
+							</li>
+							<li class="search-modal__books-link">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									право России. Часть первая : практикум
+								</span>
+							</li>
+							<li class="search-modal__books-link">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									право Российской Федерации: Особенная часть
+								</span>
+							</li>
+							<li class="search-modal__books-link active">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									право: Общая часть. Учебник. В 4 т. Том 1. 2-е изд. перераб. и д...
+								</span>
+							</li>
+							<li class="search-modal__books-link">
+							</li>
+							<li class="search-modal__books-link">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									право: Общая часть. Учебник. В 4 т. Том 2. 2-е изд. перераб. и д...
+								</span>
+							</li>
+							<li class="search-modal__books-link">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									право: современные проблемы науки, законодательства, прак...
+								</span>
+							</li>
+							<li class="search-modal__books-link">
+								<span class="search-modal__books-link--text strong">Гражданское</span>
+								<span class="search-modal__books-link--text">
+									Гражданское право: современные проблемы науки, законодательства, прак...
+								</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="search-modal__categories">
+						<span class="search-modal__categories-title">Категории</span>
+						<ul class="search-modal__categories-list">
+							<li class="search-modal__categories-link">
+								<span class="search-modal__categories-link--text">Гражданское право</span>
+								<span class="search-modal__categories-link--count">41</span>
+							</li>
+							<li class="search-modal__categories-link">
+								<span class="search-modal__categories-link--text">Теория гражданского права</span>
+								<span class="search-modal__categories-link--count">28</span>
+							</li>
+							<li class="search-modal__categories-link">
+								<span class="search-modal__categories-link--text">Гражданско-процессуальное право</span>
+								<span class="search-modal__categories-link--count">14</span>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<input
+					onclick="o2.headerSearch.open(this)"
+					placeholder="Автор, название, ISBN"
+					type="text"
+					class="header-center__search-input"
+				>
+				<button class="header-center__search-btn">
+					<div class="header-center__search-btn--icon">
+						{% include '@assets/svg/search.svg' %}
+					</div>
+					<span class="header-center__search-btn--text">Искать</span>
+				</button>
+			</div>
+
+			<div class="header-center__list">
+				<li class="header-center__link header-center__bookmark">
+					<div class="header-center__link-img">
+						{% include '@assets/svg/bookmark.svg' %}
+					</div>
+					<p class="header-center__link-text">
+						Отложено
+					</p>
+				</li>
+
+				<li class="header-center__link header-center__smile">
+					<div class="header-center__link-img">
+						{% include '@assets/svg/smile.svg' %}
+					</div>
+					<p class="header-center__link-text">
+						Войти
+					</p>
+				</li>
+
+				<li class="header-center__link header-center__cart">
+					<div class="header-center__link-img">
+						{% include '@assets/svg/cart.svg' %}
+					</div>
+					<p class="header-center__link-text">
+						Корзина
+					</p>
+					<div class="header-center__link-count">
+						<p class="header-center__link-count--text">3</p>
+					</div>
+				</li>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="header-bottom__burger">
+				<span class="header-bottom__burger-line"></span>
+			</div>
+
+			<ul class="header-bottom__list">
+				<li class="header-bottom__link">
+					<span class="header-bottom__link-text">Каталог</span>
+				</li>
+
+				<li class="header-bottom__link">
+					<span class="header-bottom__link-text">Авторы</span>
+				</li>
+
+				<li class="header-bottom__link">
+					<span class="header-bottom__link-text">Новинки</span>
+				</li>
+
+				<li class="header-bottom__link">
+					<div class="header-bottom__link-img">
+						{% include '@assets/svg/discount.svg' %}
+					</div>
+					<span class="header-bottom__link-text">Скидки</span>
+				</li>
+
+				<li class="header-bottom__link">
+					<span class="header-bottom__link-text">Партнёрам</span>
+				</li>
+
+				<li class="header-bottom__link">
+					<span class="header-bottom__link-text">Мы</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
