@@ -1,10 +1,10 @@
 <header class="header">
 	<span class="header-top__line"></span>
 
-	<div class="container">
+	<div class="container header-container">
 		<div class="header-top">
 			<div class="header-top__wrapper">
-				<div class="header-top__location">
+				<div onclick="o2.header.modalLocal(this)" class="header-top__location">
 					<div class="header-top__location-img">
 						{% include '@assets/svg/location.svg' %}
 					</div>
@@ -59,6 +59,58 @@
 		</div>
 
 		<div class="header-center">
+			<div class="header-local__modal local">
+				<div class="local-top">
+					<div class="local-top__img">
+						{% include '@assets/svg/location.svg' %}
+					</div>
+					<span class="local-top__text">Ваш населённый пункт</span>
+					<div onclick="o2.header.modalLocalClose(this)" class="local-modal__close">
+						{% include '@assets/svg/modal-local-close.svg' %}
+					</div>
+				</div>
+				<div class="local-center">
+					<label class="local-search__label">
+						Поиск населенного пункта
+						<div class="local-search">
+							<input placeholder="Откуда вы?" class="local-search__input" type="text" />
+							<button class="local-search__btn">
+								<div class="local-search__btn-icon">
+									{% include '@assets/svg/local-search.svg' %}
+								</div>
+							</button>
+						</div>
+					</label>
+				</div>
+				<div class="local-bottom">
+					<ul class="local-bottom__list">
+						<li class="local-bottom__link active">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+						<li class="local-bottom__link">Нижний Новгород</li>
+					</ul>
+				</div>
+			</div>
 			<div class="header-center__logo">
 				<img src="./img/logo.png" alt="Logo" class="header-center__logo-img">
 			</div>
@@ -137,11 +189,9 @@
 							</li>
 						</ul>
 					</div>
-
 				</div>
 				<input
-					onclick="o2.headerSearch.open(this)"
-					placeholder="Автор, название, ISBN"
+					onclick="o2.header.modalSearch(this)"
 					type="text"
 					class="header-center__search-input"
 				>

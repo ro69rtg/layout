@@ -70,3 +70,77 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/*Gosha Sans*/
+@font-face
+{
+	font-family: 'GoshaSans';
+	src: url(#{$fonts}/GoshaSans/GoshaSans-UltraLight.ttf);
+	src: url(#{$fonts}/GoshaSans/GoshaSans-UltraLight.ttf) format('truetype'),
+		 url(#{$fonts}/GoshaSans/GoshaSans-UltraLight.woff2) format('woff2'),
+		 local('GoshaSans-Thin');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'GoshaSans';
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Light.ttf);
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Light.ttf) format('truetype'),
+		 url(#{$fonts}/GoshaSans/GoshaSans-Light.woff2) format('woff2'),
+		 local('GoshaSans-Light');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'GoshaSans';
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Regular.ttf);
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Regular.ttf) format('truetype'),
+		 url(#{$fonts}/GoshaSans/GoshaSans-Regular.woff2) format('woff2'),
+		 local('GoshaSans-Regular');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'GoshaSans';
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Medium.ttf);
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Medium.ttf) format('truetype'),
+		 url(#{$fonts}/GoshaSans/GoshaSans-Medium.woff2) format('woff2'),
+		 local('GoshaSans-Medium');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face
+{
+	font-family: 'GoshaSans';
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Bold.ttf);
+	src: url(#{$fonts}/GoshaSans/GoshaSans-Bold.ttf) format('truetype'),
+		 url(#{$fonts}/GoshaSans/GoshaSans-Bold.woff2) format('woff2'),
+		 local('GoshaSans-Bold');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'GoshaSans';
+	src: url(#{$fonts}/GoshaSans/GoshaSans-UltraBold.ttf);
+	src: url(#{$fonts}/GoshaSans/GoshaSans-UltraBold.ttf) format('truetype'),
+		 url(#{$fonts}/GoshaSans/GoshaSans-UltraBold.woff2) format('woff2'),
+		 local('GoshaSans-Black');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}

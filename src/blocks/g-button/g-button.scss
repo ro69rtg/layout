@@ -1,16 +1,85 @@
-.g-button, input.g-button
-{
-	display: inline-block;
-	font-size: 15px;
-	line-height: 18px;
-	color: #fff;
-	background-color: #191C21;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	cursor: pointer;
-	padding-right: 71px;
-	padding-left: 71px;
-	border:0px;
+// .g-button, input.g-button
+// {
+// 	display: inline-block;
+// 	font-size: 15px;
+// 	line-height: 18px;
+// 	color: #fff;
+// 	background-color: #191C21;
+// 	padding-top: 15px;
+// 	padding-bottom: 15px;
+// 	cursor: pointer;
+// 	padding-right: 71px;
+// 	padding-left: 71px;
+// 	border:0px;
 
-	&:hover{background-color: rgba(103, 115, 135, 0.7);}
+// 	&:hover{background-color: rgba(103, 115, 135, 0.7);}
+// }
+
+.g-btn__cart
+{
+	width:265px;
+	height:40px;
+	background: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	@media(min-width:768px)
+	{
+		width:146px;
+		height:40px;
+	}
 }
+.g-btn__cart-img
+{
+	margin-right:12px;
+}
+.g-btn__cart-text
+{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 15px;
+	color: #1C294D;
+}
+.g-btn__bookmark
+{
+	background: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+	margin-left:10px;
+	width:40px;
+	height:40px;
+}
+.g-btn__bookmark-img
+{
+	margin-top:10px;
+}
+
+.top-arrow__btns
+{
+	margin-left:auto;
+	border: 1px solid rgba(28, 41, 77, 0.15);
+	border-radius: 5px;
+	display:flex;
+	width:61px;
+	height:30px;
+}
+
+.top-arrow__btn
+{
+	width:50%;
+	border:none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& svg path{
+		fill:rgba(28, 41, 77, 0.5);
+		fill-opacity:1;
+	}
+	&:hover{cursor:pointer;}
+	&:hover svg path{fill:rgba(28, 41, 77, 1);}
+}
+.top-arrow__btn:first-child{border-right:1px solid rgba(28, 41, 77, 0.15);}
+.top-arrow__btn:first-child{margin-left:1px;}
+

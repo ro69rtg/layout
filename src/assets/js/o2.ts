@@ -16,6 +16,7 @@ window.o2 =
 	 */
 	init(): void
 	{
+		this.header.init();
 	},
 	/**
 	* отслеживание клика вне блока

@@ -16,6 +16,12 @@
 @import '@b/g-radio/g-radio.scss';
 /* @import 'blocks/component/component'; */
 @import '@b/header/header.scss';
+@import '@b/banner/banner.scss';
+@import '@b/cards/cards.scss';
+@import '@b/mailing/mailing.scss';
+@import '@b/services/services.scss';
+@import '@b/news/news.scss';
+@import '@b/footer/footer.scss';
 /* pages */
 /* @import 'index'; */
 
@@ -42,4 +48,15 @@ html
 body
 {
 	background: rgba(28, 41, 77, 0.25);
+}
+.container
+{
+	width:100%;
+	padding:0 10px;
+	@media(min-width:380px)
+	{
+		max-width:1140px;
+	}
+	@media(min-width:992px){padding:0 20px;}
+	@media(min-width:1160px){padding:0;}
 }

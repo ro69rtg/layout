@@ -1,0 +1,147 @@
+.footer
+{
+	width:100%;
+	height:455px;
+	margin-top:20px;
+	& .container{padding:0;}
+}
+.footer-row
+{
+	display:flex;
+	flex-wrap:wrap;
+	background: rgba(28, 41, 77, 0.05);
+}
+.footer-socies
+{
+	width:100%;
+	margin-bottom:20px;
+}
+.footer-socies
+{
+	border-bottom:1px solid rgba(28, 41, 77, 0.15);
+	padding:20px 0 13px 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	& .desk{display:none;}
+	& .mob{display:flex;}
+	@media(min-width:992px){
+		& .desk{display:flex;}
+		& .mob{display:none;}
+	}
+}
+.footer-socies__img
+{
+	margin-right:15px;
+	&:last-child{margin-right:0;}
+}
+
+.footer-logo
+{
+	width:20%;
+	margin-left:20px;
+}
+.footer-logo__img{margin-right:15px;}
+
+.footer-mailer
+{
+	width:72%;
+	display:flex;
+	position:relative;
+	margin-left:-10px;
+	margin-bottom:20px;
+}
+.footer-mailer__input
+{
+	width:100%;
+	background: #FFFFFF;
+	border: 1px solid rgba(40, 47, 54, 0.15);
+	border-radius:5px;
+	height:40px;
+	padding:0 52px 0px 15px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(40, 47, 54, 0.5);
+}
+.footer-mailer__input-btn
+{
+	background: #FF5C00;
+	width:50px;
+	height:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:none;
+	margin-left:auto;
+	position:absolute;
+	right:0;
+	border-radius: 0 5px 5px 0;
+}
+
+.footer-info
+{
+	display:flex;
+	background:#ffffff;
+	&.desk{display:none;}
+	@media(min-width:992px)
+	{
+		&.desk{display:flex;}
+		&.mob{display:none;}
+	}
+}
+.footer-info__list
+{
+	width:100%;
+}
+.footer-info__link
+{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #2A3D48;
+	padding:20px;
+	border-top:2px solid rgba(42, 61, 72, 0.15);
+	height:62px;
+	display:flex;
+	&.expand
+	{
+		border-top:none;
+		border-bottom:2px solid rgba(42, 61, 72, 0.15);
+		position:relative;
+		margin:0 20px;
+		padding:20px 0;
+		font-size:14px;
+		&:after{
+			content:url("../svg/footer-arrow-down.svg");
+			position:absolute;
+			right:4px;
+			top:18px;
+		}
+	}
+	&.price{border-bottom:none;}
+	&.policy
+	{
+		height:auto;
+		margin-top:-5px;
+		display:block;
+	}
+	&.policy .footer-info__link-text{line-height:25px;}
+}
+.footer-info__link-text
+{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(28, 41, 77, 0.5);
+	display:block;
+}
+.footer-info__about
+{
+	margin:0 3px 0 7px;
+}
+.footer-info__addition
+{
+	position:relative;
+	left:5px;
+}

@@ -18,8 +18,9 @@
 </head>
 <body>
 	{% include '@blocks/header/header.twig' %}
-	<div class="site-content">
+	<div onclick="o2.header.hideElement(this)" class="site-content">
 		{% block page %}{% endblock %}
+
 	</div>
 	{% include '@blocks/footer/footer.twig' %}
 </body>

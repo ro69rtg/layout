@@ -1,0 +1,77 @@
+<div class="banner container">
+	<div class="slider">
+		<div class="slider-block">
+			<img src="./img/slider-1.png" alt="slider" class="slider-block__img">
+			<div class="slider-block__content">
+				<div class="slider-block__content-img">
+					{% include '@assets/svg/slider-1.svg' %}
+				</div>
+			</div>
+		</div>
+		<div class="slider-dots">
+			<ul class="slider-dots__list">
+				<li class="slider-dots__link active"></li>
+				<li class="slider-dots__link"></li>
+				<li class="slider-dots__link"></li>
+				<li class="slider-dots__link"></li>
+			</ul>
+		</div>
+		<div class="slider-btns">
+			<div class="slider-btns__left">
+				<div class="slider-btns__left-img">
+					{% include '@assets/svg/slider-arrow-left.svg' %}
+				</div>
+			</div>
+			<div class="slider-btns__right">
+				<div class="slider-btns__right-img">
+					{% include '@assets/svg/slider-arrow-right.svg' %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner-book">
+		<div class="banner-book__top">
+			<span class="banner-book__title">Книга дня</span>
+			<img src="./img/banner-book.png" alt="banner-book" class="banner-book__img">
+			<div class="banner-book__time">
+				<span class="banner-book__time-text">08:56:31</span>
+			</div>
+		</div>
+		<div class="banner-book__center">
+			<p class="banner-book__genre">Корпоративное право</p>
+			<p class="banner-book__description">Инвестирование: способы, риски, субъекты : монография</p>
+			<p class="banner-book__author">Майфат А.В.</p>
+			<p class="banner-book__price">4 450 ₽</p>
+		</div>
+		<div class="banner-book__bottom">
+			{% include '@blocks/g-button/add-cart.twig' %}
+			{% include '@blocks/g-button/bookmark.twig' %}
+		</div>
+	</div>
+
+	<div class="banner-promotion">
+		<div class="promotion-block promotion-block__one">
+			<div class="promotion-block__row promotion-block__row-one">
+				<div class="promotion-block__one-img">
+					{% include '@assets/svg/promotion-1.svg' %}
+				</div>
+				<span class="promotion-block__text promotion-block__text-one">Бесплатно доставим ваш заказ при покупке от 2000 ₽</span>
+			</div>
+			<div class="promotion-block__img">
+				{% include '@assets/svg/promotion-1(icon).svg' %}
+			</div>
+		</div>
+		<div class="promotion-block promotion-block__two">
+			<div class="promotion-block__row promotion-block__row-two">
+				<div class="promotion-block__two-img">
+					{% include '@assets/svg/promotion-2.svg' %}
+				</div>
+				<span class="promotion-block__text">Скидка при регистрации до 15%</span>
+			</div>
+			<div class="promotion-block__img">
+				{% include '@assets/svg/promotion-2(icon).svg' %}
+			</div>
+		</div>
+	</div>
+</div>
