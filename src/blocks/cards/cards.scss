@@ -1,7 +1,7 @@
 .cards-row
 {
 	background:#fff;
-	padding:10px 0 0 0;
+	padding:18px 0 0 0;
 	width:100%;
 	border-radius:5px;
 	overflow: hidden;
@@ -30,7 +30,7 @@
 .cards-top
 {
 	display:flex;
-	padding:0 20px 0 10px;
+	padding:0 10px 0 10px;
 	@media(min-width:992px){padding:0 25px 0 25px;}
 }
 
@@ -226,7 +226,7 @@
 {
 	margin-bottom:15px;
 	position:relative;
-	top:-15px;
+	top:-20px;
 }
 
 .card-price__sale

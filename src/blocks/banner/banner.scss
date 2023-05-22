@@ -72,7 +72,7 @@
 }
 .slider-block__content-img
 {
-	margin-top:25px;
+	margin-top:10px;
 
 	@media(min-width:768px)
 	{
@@ -141,7 +141,8 @@
 	&:hover
 	{
 		cursor:pointer;
-		background:rgba(255, 255, 255,.4);
+		background:rgb(247,255,238,.4);
+		@media(min-width:768px){background:rgb(247,255,238,1);}
 
 		& svg path
 		{
@@ -158,6 +159,7 @@
 		display:flex;
 		align-items: center;
 		justify-content:center;
+		background:rgb(247,255,238);
 	}
 
 	& svg path{opacity-fill:1;}
@@ -208,7 +210,7 @@
 	background: #fff;
 	margin-top:10px;
 	border-radius:10px;
-	padding:30px 20px 20px 20px;
+	padding:20px 20px 20px 20px;
 
 	@media(min-width:380px){max-width:100%;}
 
@@ -363,7 +365,7 @@
 .promotion-block
 {
 	border-radius:5px;
-	padding:20px;
+	padding:16px;
 	display:flex;
 	height:auto;
 
