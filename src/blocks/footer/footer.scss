@@ -4,18 +4,36 @@
 	height:455px;
 	margin-top:20px;
 	& .container{padding:0;}
+	@media(min-width:768px)
+	{
+		background:#fff;
+		margin-top:30px;
+	}
 }
+
 .footer-row
 {
 	display:flex;
 	flex-wrap:wrap;
-	background: rgba(28, 41, 77, 0.05);
+
+	@media(min-width:768px)
+	{
+		padding-top:25px;
+		justify-content:space-between;
+		max-width: 1140px;
+		margin: 0 auto;
+	}
+
+	@media(min-width:1200px){justify-content:flex-start;}
 }
-.footer-socies
+
+.footer-wrapper
 {
-	width:100%;
-	margin-bottom:20px;
+	background: rgb(241, 241, 242);
+
+	@media(min-width:768px){padding:0 2%;}
 }
+
 .footer-socies
 {
 	border-bottom:1px solid rgba(28, 41, 77, 0.15);
@@ -23,13 +41,29 @@
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	width:100%;
+	margin-bottom:20px;
+
 	& .desk{display:none;}
+
 	& .mob{display:flex;}
-	@media(min-width:992px){
+
+	@media(min-width:768px)
+	{
+		order:3;
+		width:auto;
+		border:none;
+		padding:0;
+	}
+
+	@media(min-width:768px){
 		& .desk{display:flex;}
+
 		& .mob{display:none;}
 	}
+
 }
+
 .footer-socies__img
 {
 	margin-right:15px;
@@ -40,7 +74,13 @@
 {
 	width:20%;
 	margin-left:20px;
+	@media(min-width:768px)
+	{
+		margin-left:0;
+		width:auto;
+	}
 }
+
 .footer-logo__img{margin-right:15px;}
 
 .footer-mailer
@@ -50,6 +90,18 @@
 	position:relative;
 	margin-left:-10px;
 	margin-bottom:20px;
+
+	@media(min-width:768px)
+	{
+		margin-left:0;
+		width:50%;
+	}
+
+	@media(min-width:1200px)
+	{
+		width:443px;
+		margin:0 200px 0 282px;
+	}
 }
 .footer-mailer__input
 {
@@ -64,6 +116,7 @@
 	line-height: 20px;
 	color: rgba(40, 47, 54, 0.5);
 }
+
 .footer-mailer__input-btn
 {
 	background: #FF5C00;
@@ -83,18 +136,33 @@
 {
 	display:flex;
 	background:#ffffff;
+
 	&.desk{display:none;}
-	@media(min-width:992px)
+
+	@media(min-width:768px)
 	{
+		padding:45px 2% 0 2%;
+
 		&.desk{display:flex;}
+
 		&.mob{display:none;}
 	}
+
+	@media(min-width:1200px){padding:45px 165px 0 0%;}
 }
-.footer-info__list
+.footer-info__list{width:100%;}
+
+.footer-info__title
 {
-	width:100%;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #1C294D;
+	display:block;
+	margin-bottom:24px;
 }
-.footer-info__link
+
+.footer-info__link,.footer-file__text
 {
 	font-weight: 400;
 	font-size: 14px;
@@ -104,6 +172,7 @@
 	border-top:2px solid rgba(42, 61, 72, 0.15);
 	height:62px;
 	display:flex;
+
 	&.expand
 	{
 		border-top:none;
@@ -112,6 +181,7 @@
 		margin:0 20px;
 		padding:20px 0;
 		font-size:14px;
+
 		&:after{
 			content:url("../svg/footer-arrow-down.svg");
 			position:absolute;
@@ -119,15 +189,46 @@
 			top:18px;
 		}
 	}
+
 	&.price{border-bottom:none;}
+
 	&.policy
 	{
 		height:auto;
 		margin-top:-5px;
 		display:block;
 	}
+
 	&.policy .footer-info__link-text{line-height:25px;}
+
+	@media(min-width:768px)
+	{
+		border:none;
+		color:rgba(40, 47, 54, 0.8);
+		padding:0;
+		height:auto;
+		margin-bottom:14px;
+	}
 }
+
+.footer-file{@media(min-width:768px){padding-left:4px;}}
+
+.footer-file__download,.footer-file__type
+{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: rgba(40, 47, 54, 0.8);
+	display:block;
+}
+
+.footer-file__type
+{
+	color: rgba(40, 47, 54, 0.5);
+	display:block;
+	font-size:12px;
+}
+
 .footer-info__link-text
 {
 	font-weight: 400;
@@ -136,12 +237,64 @@
 	color: rgba(28, 41, 77, 0.5);
 	display:block;
 }
-.footer-info__about
-{
-	margin:0 3px 0 7px;
-}
+
+.footer-info__about{margin:0 3px 0 7px;}
+
 .footer-info__addition
 {
 	position:relative;
 	left:5px;
 }
+
+.footer-contacts__lists{display:flex;}
+
+.footer-contacts__icon{margin-right:8px;}
+
+.footer-file
+{
+	display:flex;
+	flex-wrap:wrap;
+}
+.footer-file__block{margin-left:10px;}
+
+.footer-basement
+{
+	display:none;
+	@media(min-width:768px)
+	{
+		padding:0;
+		display:flex;
+		margin-top:30px;
+	}
+}
+
+.footer-basement__row
+{
+	border-top:2px solid rgba(40, 47, 54, 0.15);
+	justify-content:space-between;
+	display:flex;
+	width:100%;
+	padding-top:40px;
+	@media(min-width:768px){justify-content:flex-start;}
+}
+
+.footer-basement__title
+{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(28, 41, 77, 0.5);
+	margin-right:205px;
+}
+
+.footer-basement__address,.footer-basement__policy,.footer-basement__treaty
+{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(28, 41, 77, 0.8);
+}
+
+.footer-basement__address{margin-right:70px;}
+
+.footer-basement__policy{margin-right:30px;}

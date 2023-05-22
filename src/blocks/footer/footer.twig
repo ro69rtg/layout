@@ -1,5 +1,5 @@
 <footer class="footer">
-	<div class="container">
+	<div class="footer-wrapper">
 		<div class="footer-row">
 			<div class="footer-socies">
 				<div class="mob">
@@ -34,46 +34,97 @@
 					{% include '@assets/svg/send.svg' %}
 				</button>
 			</div>
+		</div>
+	</div>
+	<div class="container">
+			<div class="footer-info mob">
+				<ul class="footer-info__list">
+					<li class="footer-info__link expand">Покупателям</li>
+					<li class="footer-info__link expand">Издательство</li>
+					<li class="footer-info__link expand">Книги</li>
+					<li class="footer-info__link expand price">Прайс-Лист</li>
+					<li class="footer-info__link policy">
+						<span class="footer-info__link-text">Политика конфиденциальности</span>						<span class="footer-info__link-text">Договор оферты</span>
+					</li>
+					<li class="footer-info__link">
+						{% include '@assets/svg/call.svg' %}						<span class="footer-info__about">8 (968) 660-65-50</span>
+						<div class="footer-info__addition">
+							{% include '@assets/svg/info-icon.svg' %}
+						</div>
+					</li>
+					<li class="footer-info__link">
+						{% include '@assets/svg/mail.svg' %}
+						<span class="footer-info__about">market@estatut.ru</span>
+					</li>
+					<li class="footer-info__link">
+						{% include '@assets/svg/location.svg' %}
+						<span class="footer-info__about">ул. Лобачевского, 92, корп. 2 119454, г. Москва</span>
+					</li>
+					<li class="footer-info__link">
+						<span class="">© 2020 Издательство «Статут»</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-info desk">
+				<ul class="footer-info__list">
+					<span class="footer-info__title">Покупателям</span>
+					<li class="footer-info__link">Наша почта</li>
+					<li class="footer-info__link">Оплата и доставка</li>
+					<li class="footer-info__link">Вопросы и ответы</li>
+				</ul>
+				<ul class="footer-info__list">
+					<span class="footer-info__title">Издательство</span>
+					<li class="footer-info__link">О компании</li>
+					<li class="footer-info__link">Авторам</li>
+					<li class="footer-info__link">Вакансии</li>
+					<li class="footer-info__link">Контакты</li>
+				</ul>
+				<ul class="footer-info__list">
+					<span class="footer-info__title">Книги</span>
+					<li class="footer-info__link">Все категории</li>
+					<li class="footer-info__link">Бестселлеры</li>
+					<li class="footer-info__link">Новинки</li>
+					<li class="footer-info__link">Скидки и акции</li>
+				</ul>
+				<ul class="footer-info__list">
+					<span class="footer-info__title">Прайс-лист</span>
+					<li class="footer-file">
+						<div class="footer-file__icon">
+							{% include '@assets/svg/file-icon.svg' %}
+						</div>
+						<div class="footer-file__block">
+							<span class="footer-file__download">Скачать прайс-лист</span>
+							<span class="footer-file__type">PDF, 12 Mb </span>
+						</div>
+					</li>
+				</ul>
+				<ul class="footer-info__list footer-contacts__list">
+					<span class="footer-info__title">Телефон и Email</span>
+					<li class="footer-info__link footer-contacts__link">
+						<div class="footer-contacts__icon">
+							{% include '@assets/svg/mail.svg' %}
+						</div>
+						<span class="footer-contacts__text">market@estatut.ru</span>
+					</li>
+					<li class="footer-info__link footer-contacts__link">
+						<div class="footer-contacts__icon">
+							{% include '@assets/svg/call.svg' %}
+						</div>
+						<span class="footer-contacts__text">8 (968) 660-65-50</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-basement">
+				<div class="footer-basement__row">
+					<span class="footer-basement__title">© 2020 Издательство «Статут»</span>
+					<span class="footer-basement__address">ул. Лобачевского, 92, корп. 2 119454, г. Москва</span>
+					<span class="footer-basement__policy">Политика конфиденциальности</span>
+					<span class="footer-basement__treaty">Договор оферты</span>
+				</div>
+			</div>
 
 		</div>
-
-		<div class="footer-info mob">
-			<ul class="footer-info__list">
-				<li class="footer-info__link expand">Покупателям</li>
-				<li class="footer-info__link expand">Издательство</li>
-				<li class="footer-info__link expand">Книги</li>
-				<li class="footer-info__link expand price">Прайс-Лист</li>
-				<li class="footer-info__link policy">
-					<span class="footer-info__link-text">Политика конфиденциальности</span>						<span class="footer-info__link-text">Договор оферты</span>
-				</li>
-				<li class="footer-info__link">
-					{% include '@assets/svg/call.svg' %}						<span class="footer-info__about">8 (968) 660-65-50</span>
-					<div class="footer-info__addition">
-						{% include '@assets/svg/info-icon.svg' %}
-					</div>
-				</li>
-				<li class="footer-info__link">
-					{% include '@assets/svg/mail.svg' %}
-					<span class="footer-info__about">market@estatut.ru</span>
-				</li>
-				<li class="footer-info__link">
-					{% include '@assets/svg/location.svg' %}
-					<span class="footer-info__about">ул. Лобачевского, 92, корп. 2 119454, г. Москва</span>
-				</li>
-				<li class="footer-info__link">
-					<span class="">© 2020 Издательство «Статут»</span>
-				</li>
-			</ul>
-		</div>
-
-		<div class="footer-info desk">
-			<ul class="footer-info__list">
-				<span class="footer-info__title">Покупателям</span>
-				<li class="footer-info__text">Наша почта</li>
-				<li class="footer-info__text">Оплата и доставка</li>
-				<li class="footer-info__text">Вопросы и ответы</li>
-			</ul>
-		</div>
-
 	</div>
 </footer>

@@ -44,10 +44,13 @@ html
 	font-size: $mainFontSize;
 	color: $mainFontColor;
 	-webkit-font-smoothing: antialiased;
+	scroll-behavior:smoth;
+	scrollbar-gutter:stable;
 }
 body
 {
-	background: rgba(28, 41, 77, 0.25);
+	background: rgb(249,249,250);
+	&.lock{overflow:hidden;}
 }
 .container
 {

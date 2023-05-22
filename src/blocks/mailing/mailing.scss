@@ -3,11 +3,10 @@
 	margin:10px 0 15px 0;
 	display:flex;
 	position:relative;
-	@media(min-width:992px)
-	{
-		margin:30px 0 30px 0;
-	}
+
+	@media(min-width:992px){margin:30px 0 30px 0;}
 }
+
 .mailing-info
 {
 	border-radius: 5px;
@@ -15,13 +14,16 @@
 	width:100%;
 	position:relative;
 	padding:20px 10px;
+
 	@media(min-width:992px)
 	{
 		display:flex;
 		padding:42px 45px 35px 45px;
 	}
 }
+
 .mailing-info__top{display:flex;}
+
 .mailing-info__bg-img
 {
 	position:absolute;
@@ -34,6 +36,7 @@
 		left:100px;
 	}
 }
+
 .mailing-info__text,.mailing-info__bg-text
 {
 	font-weight: 500;
@@ -45,6 +48,7 @@
 	width:100%;
 	display:block;
 }
+
 .mailing-input
 {
 	width:100%;
@@ -58,13 +62,14 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: rgba(28, 41, 77, 0.5);
+
 	@media(min-width:480px){max-width:418px;}
-	@media(min-width:768px)
-	{
-		margin:15 10px 0 14px;
-	}
+
+	@media(min-width:768px){margin:15 10px 0 14px;}
+
 	@media(min-width:992px){margin:-10px 10px 0 14px}
 }
+
 .mailing-btn
 {
 	width:100%;
@@ -76,6 +81,8 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #FFFFFF;
+
 	@media(min-width:480px){max-width:137px;}
+
 	@media(min-width:992px){margin-top:-10px;}
 }
