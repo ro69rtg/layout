@@ -1,0 +1,47 @@
+<div class="card card--active">
+	<div class="card__top">
+		<div class="card__top-best">
+			<span class="card__top-best-text">Бестселлер</span>
+		</div>
+		<div class="card__top-promotion">
+			<span class="card__top-promotion-text">1+1 =3</span>
+		</div>
+		<a class="card__top-img">
+			{% include '@assets/svg/card-img.svg' %}
+		</a>
+	</div>
+
+	<div class="card__center">
+		<p class="card__center-title">Корпоративное право</p>
+		<p class="card__center-description">Инвестирование: способы, риски, субъекты : монограф...</p>
+		<p class="card__center-author">Майфат А.В.</p>
+		<div class="card__price">
+			<div class="card__price-sale">
+				<span class="card__center-price">1 111 ₽ </span>
+				<span class="card__center-price card__center-price--old">1284 ₽</span>
+				<span class="card__center-price card__center-benefit">Выгода 300 ₽</span>
+			</div>
+			<span class="card__price-cont">2 222 ₽</span>
+		</div>
+		<div class="card__center-option">
+			<div class="card__center-option-rating">
+				<div class="card__center-option-rating-img">
+					{% include '@assets/svg/rating-star.svg' %}
+				</div>
+				<p class="card__center-option-rating-text">4.9</p>
+			</div>
+			<div class="card__center-option-recom">
+				<div class="card__center-option-recom-img">
+					{% include '@assets/svg/recom-hand.svg' %}
+				</div>
+				<p class="card__center-option-recom-text">89%</p>
+				<p class="card__center-option-recom-text">рекомендуют</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card__bottom">
+		{% include '@blocks/g-button/add-cart.twig' %}
+		{% include '@blocks/g-button/bookmark.twig' %}
+	</div>
+</div>

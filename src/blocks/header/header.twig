@@ -1,277 +1,137 @@
 <header class="header">
-	<span class="header-top__line"></span>
+	<span class="header__line"></span>
 
-	<div class="container header-container">
-		<div class="header-top">
-			<div class="header-top__wrapper">
-				<div onclick="o2.header.modalLocal(this)" class="header-top__location">
-					<div class="header-top__location-img">
-						{% include '@assets/svg/location.svg' %}
-					</div>
-					<span class="header-top__location-text">Москва</span>
+	<div class="header__top">
+		<ul class="header__top-list">
+			<li class="header__top-link">
+				<div class="header__top-link-img">
+					{% include '@assets/svg/location.svg' %}
 				</div>
+				<a href="" class="header__top-link-text">Москва</a>
+			</li>
+			<li class="header__top-link">
+				<div class="header__top-link-img">
+					{% include '@assets/svg/delivery.svg' %}
+				</div>
+				<a class="header__top-link-text">
+					Доставка и оплата
+				</a>
+			</li>
+			<li class="header__top-link header__top-link--hours">
+				<div class="header__top-link-img">
+					{% include '@assets/svg/opening-hours.svg' %}
+				</div>
+				<a class="header__top-link-text">
+					Адрес и часы работы
+				</a>
+			</li>
+		</ul>
 
-				<div class="header-top__menu">
-					<ul class="header-top__menu-list">
-						<li class="header-top__menu-link">
-							<div class="header-top__menu-link--img">
-								{% include '@assets/svg/delivery.svg' %}
-							</div>
-							<p class="header-top__menu-link--text">
-								Доставка и оплата
-							</p>
-						</li>
-						<li class="header-top__menu-link">
-							<div class="header-top__menu-link--img">
-								{% include '@assets/svg/opening-hours.svg' %}
-							</div>
-							<p class="header-top__menu-link--text">
-								Адрес и часы работы
-							</p>
-						</li>
-					</ul>
+		<ul class="header__top-contacts">
+			<li class="header__top-contacts-link">
+				<div class="header__top-contacts-link-img">
+					{% include '@assets/svg/mail.svg' %}
 				</div>
+				<p class="header__top-contacts-link-text">
+					market@estatut.ru
+				</p>
+			</li>
+			<li class="header__top-contacts-link">
+				<div class="header__top-contacts-link-img">
+					{% include '@assets/svg/call.svg' %}
+				</div>
+				<p class="header__top-contacts-link-text">
+					8 (968) 660-65-50
+				</p>
+				<div class="header__top-contacts-link-info">
+					{% include '@assets/svg/info.svg' %}
+				</div>
+			</li>
+		</ul>
+	</div>
 
-				<div class="header-top__contacts">
-					<ul class="header-top__contacts-list">
-						<li class="header-top__contacts-link">
-							<div class="header-top__contacts-link--img">
-								{% include '@assets/svg/mail.svg' %}
-							</div>
-							<p class="header-top__contacts-link--text">
-								market@estatut.ru
-							</p>
-						</li>
-						<li class="header-top__contacts-link">
-							<div class="header-top__contacts-link--img">
-								{% include '@assets/svg/call.svg' %}
-							</div>
-							<p class="header-top__contacts-link--text">
-								8 (968) 660-65-50
-							</p>
-							<div class="header-top__contacts-link--info">
-								{% include '@assets/svg/info.svg' %}
-							</div>
-						</li>
-					</ul>
-				</div>
+	<div class="header__center">
+			<div class="header__center-logo">
+				<img src="./img/logo.png" alt="Logo" class="header__center-logo--img">
 			</div>
-		</div>
-
-		<div class="header-center">
-			<div class="header-local__modal local">
-				<div class="local-top">
-					<div class="local-top__img">
-						{% include '@assets/svg/location.svg' %}
-					</div>
-					<span class="local-top__text">Ваш населённый пункт</span>
-					<div onclick="o2.header.modalLocalClose(this)" class="local-modal__close">
-						{% include '@assets/svg/modal-local-close.svg' %}
-					</div>
-				</div>
-				<div class="local-center">
-					<label class="local-search__label">
-						Поиск населенного пункта
-						<div class="local-search">
-							<input placeholder="Откуда вы?" class="local-search__input" type="text" />
-							<button class="local-search__btn">
-								<div class="local-search__btn-icon">
-									{% include '@assets/svg/local-search.svg' %}
-								</div>
-							</button>
-						</div>
-					</label>
-				</div>
-				<div class="local-bottom">
-					<ul class="local-bottom__list">
-						<li class="local-bottom__link active">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-						<li class="local-bottom__link">Нижний Новгород</li>
-					</ul>
-				</div>
-			</div>
-			<div class="header-center__logo">
-				<img src="./img/logo.png" alt="Logo" class="header-center__logo-img">
-			</div>
-			<div class="header-center__search">
-				<div class="header-search__modal">
-					<div class="search-modal__books">
-						<p class="search-modal__books-title">Книги</p>
-						<ul class="search-modal__books-list">
-							<li class="search-modal__books-link">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									право Российской Федерации: Общая часть
-								</span>
-							</li>
-							<li class="search-modal__books-link">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									право России. Часть первая : практикум
-								</span>
-							</li>
-							<li class="search-modal__books-link">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									право России. Часть первая : практикум
-								</span>
-							</li>
-							<li class="search-modal__books-link">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									право Российской Федерации: Особенная часть
-								</span>
-							</li>
-							<li class="search-modal__books-link active">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									право: Общая часть. Учебник. В 4 т. Том 1. 2-е изд. перераб. и д...
-								</span>
-							</li>
-							<li class="search-modal__books-link">
-							</li>
-							<li class="search-modal__books-link">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									право: Общая часть. Учебник. В 4 т. Том 2. 2-е изд. перераб. и д...
-								</span>
-							</li>
-							<li class="search-modal__books-link">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									право: современные проблемы науки, законодательства, прак...
-								</span>
-							</li>
-							<li class="search-modal__books-link">
-								<span class="search-modal__books-link--text strong">Гражданское</span>
-								<span class="search-modal__books-link--text">
-									Гражданское право: современные проблемы науки, законодательства, прак...
-								</span>
-							</li>
-						</ul>
-					</div>
-
-					<div class="search-modal__categories">
-						<span class="search-modal__categories-title">Категории</span>
-						<ul class="search-modal__categories-list">
-							<li class="search-modal__categories-link">
-								<span class="search-modal__categories-link--text">Гражданское право</span>
-								<span class="search-modal__categories-link--count">41</span>
-							</li>
-							<li class="search-modal__categories-link">
-								<span class="search-modal__categories-link--text">Теория гражданского права</span>
-								<span class="search-modal__categories-link--count">28</span>
-							</li>
-							<li class="search-modal__categories-link">
-								<span class="search-modal__categories-link--text">Гражданско-процессуальное право</span>
-								<span class="search-modal__categories-link--count">14</span>
-							</li>
-						</ul>
-					</div>
-				</div>
+			<div class="header__center-search">
 				<input
-					onclick="o2.header.modalSearch(this)"
 					type="text"
-					class="header-center__search-input"
+					class="header__center-search-input"
 				>
-				<button class="header-center__search-btn">
-					<div class="header-center__search-btn--icon">
+				<button class="header__center-search-btn">
+					<div class="header__center-search-btn-icon">
 						{% include '@assets/svg/search.svg' %}
 					</div>
-					<span class="header-center__search-btn--text">Искать</span>
+					<span class="header__center-search-btn-text">Искать</span>
 				</button>
 			</div>
 
-			<div class="header-center__list">
-				<li class="header-center__link header-center__bookmark">
-					<div class="header-center__link-img">
+			<div class="header__center-list">
+				<li class="header__center-link header__center-link--bookmark">
+					<div class="header__center-link-img header__center-link-img--bookmark">
 						{% include '@assets/svg/bookmark.svg' %}
 					</div>
-					<p class="header-center__link-text">
+					<p class="header__center-link-text">
 						Отложено
 					</p>
 				</li>
 
-				<li class="header-center__link header-center__smile">
-					<div class="header-center__link-img">
+				<li class="header__center-link header__center-link--smile">
+					<div class="header__center-link-img">
 						{% include '@assets/svg/smile.svg' %}
 					</div>
-					<p class="header-center__link-text">
+					<p class="header__center-link-text">
 						Войти
 					</p>
 				</li>
 
-				<li class="header-center__link header-center__cart">
-					<div class="header-center__link-img">
+				<li class="header__center-link header__center-link--cart">
+					<div class="header__center-link-img">
 						{% include '@assets/svg/cart.svg' %}
 					</div>
-					<p class="header-center__link-text">
+					<p class="header__center-link-text">
 						Корзина
 					</p>
-					<div class="header-center__link-count">
-						<p class="header-center__link-count--text">3</p>
+					<div class="header__center-link-count">
+						<p class="header__center-link-count-text">3</p>
 					</div>
 				</li>
 			</div>
 		</div>
 
-		<div class="header-bottom">
-			<div class="header-bottom__burger">
-				<span class="header-bottom__burger-line"></span>
+		<div class="header__bottom">
+			<div class="header__bottom-burger">
+				<span class="header__bottom-burger-line"></span>
 			</div>
 
-			<ul class="header-bottom__list">
-				<li class="header-bottom__link">
-					<span class="header-bottom__link-text">Каталог</span>
+			<ul class="header__bottom-list">
+				<li class="header__bottom-link">
+					<span class="header__bottom-link-text">Каталог</span>
 				</li>
 
-				<li class="header-bottom__link">
-					<span class="header-bottom__link-text">Авторы</span>
+				<li class="header__bottom-link">
+					<span class="header__bottom-link-text">Авторы</span>
 				</li>
 
-				<li class="header-bottom__link">
-					<span class="header-bottom__link-text">Новинки</span>
+				<li class="header__bottom-link">
+					<span class="header__bottom-link-text">Новинки</span>
 				</li>
 
-				<li class="header-bottom__link">
-					<div class="header-bottom__link-img">
+				<li class="header__bottom-link">
+					<div class="header__bottom-link-img">
 						{% include '@assets/svg/discount.svg' %}
 					</div>
-					<span class="header-bottom__link-text">Скидки</span>
+					<span class="header__bottom-link-text">Скидки</span>
 				</li>
 
-				<li class="header-bottom__link">
-					<span class="header-bottom__link-text">Партнёрам</span>
+				<li class="header__bottom-link">
+					<span class="header__bottom-link-text">Партнёрам</span>
 				</li>
 
-				<li class="header-bottom__link">
-					<span class="header-bottom__link-text">Мы</span>
+				<li class="header__bottom-link">
+					<span class="header__bottom-link-text">Мы</span>
 				</li>
 			</ul>
 		</div>
-
-	</div>
-
-	<div class="backgroundPlate" onclick="o2.header.hideModal(this)"></div>
 </header>

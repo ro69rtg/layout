@@ -1,4 +1,4 @@
-.services-row
+.services
 {
 	margin-top:10px;
 	width:100%;
@@ -15,21 +15,21 @@
 		margin-top:30px;
 	}
 }
-.services-star{@media(min-width:992px){order:3;}}
+.services__block--star{@media(min-width:992px){order:3;}}
 
-.services-bag{@media(min-width:992px){order:4;}}
+.services__block--bag{@media(min-width:992px){order:4;}}
 
-.services-card{@media(min-width:992px){order:2;}}
+.services__block--card{@media(min-width:992px){order:2;}}
 
-.services-block__right-star{@media(min-width:1200px){margin-left:-10px;}}
+.services__block-right--star{@media(min-width:1200px){margin-left:-10px;}}
 
-.services-block__right-bag{@media(min-width:1200px){margin-left:-15px;}}
+.services__block-right-bag{@media(min-width:1200px){margin-left:-15px;}}
 
-.services-block__right-card{@media(min-width:1200px){margin-left:-10px;}}
+.services__block-right--card{@media(min-width:1200px){margin-left:-10px;}}
 
-.services-block__right-clock{@media(min-width:1200px){margin-left:-20px;}}
+.services__block-right--clock{@media(min-width:1200px){margin-left:-20px;}}
 
-.services-block
+.services__block
 {
 	display:flex;
 	margin-bottom:10px;
@@ -59,40 +59,18 @@
 		padding:30px 0 0 0;
 	}
 }
-.services-block__left
+.services__block-left
 {
 	width:35%;
 	@media(min-width:1200px){width:auto;}
 }
-.services-block__left-img
+.services__block-left--bag{@media(min-width:1200px){width:80px;}}
+.services__block-left-img
 {
 	width:125px;
 	height:85px;
 
 	@media(min-width:992px){margin-left:-20px;}
-}
-.services-img__bag{margin-left:8px;}
-
-.services-img__card
-{
-	width:140px;
-	margin-left:-10px;
-
-	@media(min-width:992px){margin-left:-25px;}
-}
-
-.services-img__clock
-{
-	@media(min-width:1200px)
-	{
-		width:112px;
-		height:80px;
-		margin-left:0;
-	}
-}
-
-.services-img__card,.services-img__star
-{
 	@media(min-width:1200px)
 	{
 		margin-left:0;
@@ -101,7 +79,7 @@
 	}
 }
 
-.services-img__bag
+.services__block-img-right--bag
 {
 	@media(min-width:1200px)
 	{
@@ -111,7 +89,7 @@
 	}
 }
 
-.services-block__right
+.services__block-right
 {
 	width:65%;
 	padding-top:10px;
@@ -119,7 +97,7 @@
 	@media(min-width:1200px){width:auto;}
 }
 
-.services-block__right-title
+.services__block-right-title
 {
 	font-weight: 700;
 	font-size: 16px;
@@ -132,7 +110,7 @@
 	@media(min-width:1200px){font-size:16px;}
 }
 
-.services-block__right-text
+.services__block-right-text
 {
 	font-weight: 400;
 	font-size: 14px;
