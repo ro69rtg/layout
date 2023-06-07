@@ -4,6 +4,10 @@
 $(document).ready(function(): void
 {
 	window.o2.init();
+	window.o2.inputPlaceholders();
+	window.o2.slider.init();
+	window.o2.footer.init();
+	window.o2.gCheckBox.init();
 });
 
 /**
@@ -16,7 +20,6 @@ window.o2 =
 	 */
 	init(): void
 	{
-		this.header.init();
 	},
 	/**
 	* отслеживание клика вне блока
@@ -38,4 +41,20 @@ window.o2 =
 
 		return outsideChecker;
 	},
+	inputPlaceholders: function() {
+		let inputPlaceholders = document.querySelectorAll<HTMLInputElement>(".inputPlaceholders");
+
+		function updatePlaceholders() {
+			inputPlaceholders.forEach(function(input) {
+				if (window.matchMedia("(max-width: 480px)").matches) {
+					input.setAttribute("placeholder", input.dataset.mobilePlaceholder);
+				} else {
+					input.setAttribute("placeholder", input.dataset.desktopPlaceholder);
+				}
+			});
+		}
+
+	updatePlaceholders();
+	window.onresize = updatePlaceholders;
+},
 };

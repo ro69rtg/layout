@@ -26,7 +26,6 @@
 				</a>
 			</li>
 		</ul>
-
 		<ul class="header__top-contacts">
 			<li class="header__top-contacts-link">
 				<div class="header__top-contacts-link-img">
@@ -40,9 +39,9 @@
 				<div class="header__top-contacts-link-img">
 					{% include '@assets/svg/call.svg' %}
 				</div>
-				<p class="header__top-contacts-link-text">
+				<a href="tel:12121" class="header__top-contacts-link-text">
 					8 (968) 660-65-50
-				</p>
+				</a>
 				<div class="header__top-contacts-link-info">
 					{% include '@assets/svg/info.svg' %}
 				</div>
@@ -57,17 +56,19 @@
 			<div class="header__center-search">
 				<input
 					type="text"
-					class="header__center-search-input"
+					class="header__center-search-input inputPlaceholders"
+					data-mobile-placeholder="Что будем искать на мобильном"
+					data-desktop-placeholder="Что будем искать на десктопе"
 				>
 				<button class="header__center-search-btn">
-					<div class="header__center-search-btn-icon">
+					<span class="header__center-search-btn-icon">
 						{% include '@assets/svg/search.svg' %}
-					</div>
+					</span>
 					<span class="header__center-search-btn-text">Искать</span>
 				</button>
 			</div>
 
-			<div class="header__center-list">
+			<ul class="header__center-list">
 				<li class="header__center-link header__center-link--bookmark">
 					<div class="header__center-link-img header__center-link-img--bookmark">
 						{% include '@assets/svg/bookmark.svg' %}
@@ -90,14 +91,16 @@
 					<div class="header__center-link-img">
 						{% include '@assets/svg/cart.svg' %}
 					</div>
-					<p class="header__center-link-text">
+					<p
+					class="header__center-link-text"
+					>
 						Корзина
 					</p>
 					<div class="header__center-link-count">
 						<p class="header__center-link-count-text">3</p>
 					</div>
 				</li>
-			</div>
+			</ul>
 		</div>
 
 		<div class="header__bottom">

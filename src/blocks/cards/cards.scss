@@ -7,9 +7,9 @@
 	overflow: hidden;
 	margin-top:10px;
 
-	@media(min-width:768px){margin-top:20px;}
+	@include mq(768px){margin-top:20px;}
 
-	@media(min-width:992px){padding:15px 0 0 0;}
+	@include mq(992px){padding:15px 0 0 0;}
 }
 
 .cards__center
@@ -30,7 +30,7 @@
 {
 	display:flex;
 	padding:18px 10px 0 10px;
-	@media(min-width:992px){padding:13px 25px 0 25px;}
+	@include mq(992px){padding:15px 25px 0 25px;}
 }
 
 .cards__top-title
@@ -58,7 +58,7 @@
 }
 .cards__bottom-link--desk{
 	display:none;
-	@media(min-width:992px)
+	@include mq(992px)
 	{
 		display:inline;
 		margin-left:4px;

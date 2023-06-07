@@ -5,7 +5,7 @@
 	display:flex;
 	flex-wrap:wrap;
 	background: #FFFFFF;
-	@media(min-width:1200px){margin-top:15px;}
+	@include mq(1200px){margin-top:15px;}
 }
 
 .news__top
@@ -14,7 +14,7 @@
 	display:flex;
 	width:100%;
 	border-bottom:1px solid rgba(28, 41, 77, 0.15);
-	@media(min-width:1200px){padding:20px 25px 12px 25px;}
+	@include mq(1200px){padding:12px 25px 15px 25px;}
 }
 
 .news__top-title
@@ -34,7 +34,7 @@
 	overflow:hidden;
 	padding:0 10px;
 	width:100%;
-	@media(min-width:992px){padding:0 20px;}
+	@include mq(992px){padding:0 20px;}
 }
 
 
@@ -44,8 +44,8 @@
 	border-top:1px solid rgba(28, 41, 77, 0.15);
 	padding:10px;
 	margin-top:20px;
-	@media(min-width:992px){display:none;}
-	@media(min-width:1200px){margin-top:auto;}
+	@include mq(992px){display:none;}
+	@include mq(1200px){margin-top:auto;}
 }
 .news__bottom-btn
 {

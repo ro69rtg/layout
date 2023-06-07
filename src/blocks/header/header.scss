@@ -7,10 +7,10 @@
 	background:#ffffff;
 	width:100%;
 	position: relative;
-	padding:15px 5px 10px 5px;
-
-	@media(min-width:340px){padding:15px 5px 12px 5px;}
+	padding:15px 5px 0 15px;
+	justify-content:space-between;
 	@media(min-width:992px){padding:10px 5px 12px 5px;}
+	@media(min-width:1366px){display:block;}
 }
 
 .header__line{
@@ -89,7 +89,7 @@
 	&:hover .header__top-link-img svg path{fill:#FF7A00;}
 }
 
-.header__top-link--hours{@media(min-width:992px){margin-left:35px;}}
+.header__top-link--hours{margin-left:35px;}
 
 .header__top-link-img svg path{transition:all .3s ease;}
 .header__top-link:first-child
@@ -136,6 +136,8 @@
 	line-height:16.41px;
 }
 
+.header__top-contacts-link a{color:#6a7678;}
+
 .header-center
 {
 	margin-top:0;
@@ -165,7 +167,7 @@
 	display:flex;
 	flex-wrap:wrap;
 	order:2;
-	@media(min-width:375px){width:84%;}
+	@media(min-width:375px){width:89%;}
 	@media(min-width:480px)
 	{
 		width:auto;
@@ -187,9 +189,8 @@
 
 .header__center-logo
 {
-	margin:0 10.25px 0 0;
-
-	@media(min-width:480px)
+	margin:0 20px 0 0;
+	@media(min-width:360px)
 	{margin:0 30px 0 0;}
 }
 
@@ -220,7 +221,7 @@
 	height:40px;
 	display:flex;
 	position:relative;
-	@media(min-width:375px){width:62%;}
+	@media(min-width:375px){width:60%;}
 	@media(min-width:480px)
 	{
 		max-width: 50%;
@@ -345,7 +346,7 @@
 	@media(min-width:340px)
 	{
 		padding-top:0;
-		margin:0 0 0 20px;
+		margin:0 0 0 10px;
 	}
 
 	@media(min-width:480px)
@@ -358,17 +359,21 @@
 .header__center-cart{position:relative;}
 
 .header__center-link
-{height:48px;}
-
-.header__center-link
 {
 	display:none;
 	align-items:center;
 	margin-right:32px;
+	height:48px;
 
 	&:hover{cursor:pointer;}
 	@media(min-width:480px){display:flex;}
 
+	&:hover .header__center-link-text{color:#FF7A00;}
+	&:hover .header__center-link-img svg path
+	{
+		fill:#FF7A00;
+		fill-opacity:inherit;
+	}
 	&:first-child .header-center__link-img{width:10px;height:16.67px;}
 
 	&:last-child{
@@ -388,6 +393,7 @@
 	width:20.83px;
 	height:18.75px;
 	margin:-4px 7px 0 0;
+	transition:all .3s ease;
 
 	@media(min-width:480px)
 	{
@@ -400,6 +406,7 @@
 .header__center-link-text
 {
 	display:none;
+	transition:all .3s ease;
 
 	@media(min-width:480px)
 	{
@@ -425,8 +432,6 @@
 	justify-content:center;
 	min-width:20px;
 	min-height:20px;
-	max-width:20px;
-	max-height:20px;
 	left:12px;
 	top:-12px;
 
@@ -434,8 +439,6 @@
 	{
 		min-width:15px;
 		min-height:15px;
-		max-width:15px;
-		max-height:15px;
 		left:10px;
 		top:5px;
 	}
@@ -485,7 +488,7 @@
 	display:flex;
 	width:auto;
 	padding: 8px 0 0 5px;
-	margin:0 10px 0 10px;
+	margin:0 10px 0 0;
 
 	@media(min-width:375px){width:8%;}
 	@media(min-width:480px)

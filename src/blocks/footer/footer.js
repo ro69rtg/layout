@@ -1,24 +1,19 @@
 o2.footer = {
-	init:function()
+	init()
 	{
-		this.inputFooter();
-	},
-
-	inputFooter: function()
-	{
-		let inputFooter = document.querySelector(".footer__top-mailer-input");
-		function updatePlaceholder()
+		let footerBlock = document.querySelectorAll(".footer__center-block--toggle");
+		for (let i = 0;i < footerBlock.length;i++)
 		{
-			if(window.matchMedia("(max-width:480px").matches)
-			{
-				inputFooter.placeholder = "Подписаться на рассылку";
-			}
-			else
-			{
-				inputFooter.placeholder = "Введите свой Email и получите скидку";
-			}
+			footerBlock[i].onclick = this.footerBlockOpen.bind(this,footerBlock[i]);
 		}
-		updatePlaceholder();
-		window.onresize = updatePlaceholder;
 	},
+	footerBlockOpen(block)
+	{
+		if (window.matchMedia("(max-width: 768px)").matches)
+		{
+			let footerBlockList = block.querySelector(".footer__center-block-list");
+			block.classList.toggle("open");
+			block.querySelector(".footer__center-block-list").classList.toggle("open");
+		}
+	}
 };

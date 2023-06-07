@@ -1,180 +1,153 @@
-.slider{
+.slider {
 	width: 100%;
-	max-width:750px;
-	max-height:350px;
+	max-width: 750px;
+	max-height: 350px;
+	height: 175px;
 	position: relative;
-
-	@media(min-width:768px)
-	{
-		max-width:100%;
-		height:350px;
-		margin-bottom:20px;
-	}
-
-	@media(min-width:992px)
-	{
-		max-width:60%;
-		margin-bottom:0;
-	}
-
-	@media(min-width:1200px)
-	{
-		max-width:750px;
-		margin-bottom:0;
-	}
-}
-.slider__block{
-	width:100%;
-	height:175px;
-
-	@media(min-width:768px){height:100%;}
-}
-.slider__block-img
-{
-	width:100%;
-	height:100%;
-	position:absolute;
-	z-index:1;
-}
-.slider__block-content
-{
-	width:100%;
-	height:100%;
-	position:relative;
-	z-index:2;
-	align-items: center;
+	overflow: hidden;
 	display: flex;
-	justify-content: center;
-}
-.slider__block-content-img
-{
-	margin-top:10px;
+	border-radius: 10px;
+	animation: preloaderAnimation 1.5s infinite;
+	background: #fff;
 
-	@media(min-width:768px)
-	{
-		width:310px;
-		margin-top:10px;
-
-		& svg{
-			width:100%;
-			margin-top:0;
-			height:110px;
-		}
+	@include mq (768px) {
+		max-width: 100%;
+		height: 350px;
+		margin-bottom: 20px;
 	}
 
+	@include mq (992px) {
+		max-width: 60%;
+		margin-bottom: 0;
+	}
+
+	@include mq (1200px) {
+		max-width: 750px;
+		margin-bottom: 0;
+	}
 }
-.slider__dots
-{
+
+.slider__dots {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	z-index:3;
-	position:relative;
-	bottom:10px;
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 30px;
 
-	@media(min-width:768px){bottom:20px;}
+	@include mq (768px) {
+		bottom: 20px;
+	}
 }
-.slider__dots-list{display:flex;}
 
-.slider__dots-link
-{
-	width:25px;
-	height:2px;
+.slider__dots-list {
+	display: flex;
+}
+
+.slider__dots-link {
+	width: 25px;
+	height: 15px;
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 2px;
-	margin-right:5px;
+	margin-right: 5px;
 
-	&:hover,&.active
-	{
-		cursor:pointer;
-		background:#ffffff;
+	&:hover,&.active {
+		cursor: pointer;
+		background: #ffffff;
 	}
 
-	&:last-child{margin-right:0;}
+	&:last-child {margin-right: 0;}
 }
 
-.slider__btns
-{
-	width:100%;
-	position:absolute;
-	top:0;
-	height:100%;
-	display:flex;
+.slider__btns {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
 
-	@media(min-width:768px){align-items:center;}
+	@include mq (768px) {
+		align-items: center;
+	}
 }
 
-.slider__btns-left,.slider__btns-right
+.slider__btns-left,
+.slider__btns-right
 {
-	width:50px;
-	height:100%;
-	position:absolute;
-	z-index:4;
-	display:flex;
-	align-items:center;
-	border-radius:5px;
+	width: 50px;
+	height: 100%;
+	position: absolute;
+	z-index: 4;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
 
 	&:hover
 	{
-		cursor:pointer;
-		background:rgb(247,255,238,.4);
-		@media(min-width:768px){background:rgb(247,255,238,1);}
+		cursor: pointer;
+		background: rgba(247, 255, 238, 0.4);
+
+		@include mq (768px) {background: rgb(247, 255, 238, 1);}
 
 		& svg path
 		{
-			fill:#1C294D;
-			fill-opacity:1;
+			fill: #1c294d;
+			fill-opacity: 1;
 		}
 	}
 
-	@media(min-width:768px)
-	{
-		height:40px;
-		width:40px;
-		text-align:center;
-		display:flex;
+	@include mq (768px) {
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		display: flex;
 		align-items: center;
-		justify-content:center;
-		background:rgb(247,255,238);
+		justify-content: center;
+		background: rgb(247, 255, 238);
 	}
 
-	& svg path{opacity-fill:1;}
+	& svg path {
+		opacity-fill: 1;
+	}
 }
 
-.slider__btns-left{
-	left:0;
-
-	@media(min-width:768px){left:27px;}
+.slider__btns-left {
+	left: 0;
+	@include mq (768px) {left: 27px;}
 }
 
-.slider__btns-right
-{
-	right:0;
-
-	@media(min-width:768px){right:27px;}
+.slider__btns-right {
+	right: 0;
+	@include mq (768px){right: 27px;}
 }
 
-.slider__btns-left-img,.slider__btns-right-img{
-	position:relative;
-	width:100%;
-	height:100%;
+.slider__btns-left-img,
+.slider__btns-right-img {
+	position: relative;
+	width: 100%;
+	height: 100%;
 
-	&:hover{cursor:pointer;}
+	&:hover {
+		cursor: pointer;
+	}
 
-	& svg{display:none;}
+	& svg {
+		display: none;
+	}
 
-	@media(min-width:768px)
-	{
-		position:relative;
-		display:block;
-		width:7px;
-		height:12px;
+	@include mq (768px) {
+		position: relative;
+		display: block;
+		width: 7px;
+		height: 12px;
 
-		& svg
-		{
-			display:block;
+		& svg {
+			display: block;
 
-			& path{fill:rgba(42, 61, 72, 0.5)}
+			& path {fill: rgba(42, 61, 72, 0.5);}
 		}
 	}
 }
+

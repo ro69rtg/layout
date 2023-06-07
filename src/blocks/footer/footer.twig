@@ -1,128 +1,129 @@
 <footer class="footer">
 	<div class="footer__top">
 		<div class="footer__top-socies footer__top-socies--mob">
-				<div class="footer__top-socies-img">
+				<a class="footer__top-socies-img">
 					{% include '@assets/svg/facebook-icon.svg' %}
-				</div>
-				<div class="footer__top-socies-img">
+				</a>
+				<a class="footer__top-socies-img">
 					{% include '@assets/svg/vk-icon.svg' %}
-				</div>
-				<div class="footer__top-socies-img">
+				</a>
+				<a class="footer__top-socies-img">
 					{% include '@assets/svg/insta-icon.svg' %}
-				</div>
+				</a>
 		</div>
 		<div class="footer__top-socies footer__top-socies--desk">
-			<div class="footer__top-socies-img">
+			<a href="#" class="footer__top-socies-img">
 				{% include '@assets/svg/facebook-icon-desk.svg' %}
-			</div>
-			<div class="footer__top-socies-img">
+			</a>
+			<a href="#" class="footer__top-socies-img">
 				{% include '@assets/svg/insta-icon-desk.svg' %}
-			</div>
-			<div class="footer__top-socies-img">
+			</a>
+			<a href="#" class="footer__top-socies-img">
 				{% include '@assets/svg/twitter-icon-desk.svg' %}
-			</div>
+			</a>
 		</div>
 
 		<div class="footer__top-logo">
 			<img src="./img/logo.png" alt="Logo" class="footer__top-logo-img">
 		</div>
 		<div class="footer__top-mailer">
-			<input type="text" class="footer__top-mailer-input">
+			<input type="text"
+				class="footer__top-mailer-input
+				inputPlaceholders"
+				data-mobile-placeholder="мобилка"
+				data-desktop-placeholder="десктоп"
+			>
 			<button class="footer__top-mailer-btn">
 				{% include '@assets/svg/send.svg' %}
 			</button>
 		</div>
 	</div>
 
-	<div class="footer__center footer__center--mob">
-		<ul class="footer__center-list">
-			<li class="footer__center-link footer__center-link--expand">Покупателям</li>
-			<li class="footer__center-link footer__center-link--expand">Издательство</li>
-			<li class="footer__center-link footer__center-link--expand">Книги</li>
-			<li class="footer__center-link footer__center-link--expand footer__center-link--price">Прайс-Лист</li>
-			<li class="footer__center-link footer__center-link--policy">
-				<span class="footer__center-link-text">Политика конфиденциальности</span>
-				<span class="footer__center-link-text">Договор оферты</span>
-			</li>
-			<li class="footer__center-link">
-				{% include '@assets/svg/call.svg' %}
-				<span class="footer__center-about">8 (968) 660-65-50</span>
-				<div class="footer__center-addition">
-					{% include '@assets/svg/info-icon.svg' %}
-				</div>
-			</li>
-			<li class="footer__center-link">
-				{% include '@assets/svg/mail.svg' %}
-				<span class="footer__center-link-about">market@estatut.ru</span>
-			</li>
-			<li class="footer__center-link">
-				{% include '@assets/svg/location.svg' %}
-				<span class="footer__center-link-about">ул. Лобачевского, 92, корп. 2 119454, г. Москва</span>
-				</li>
-			<li class="footer__center-link">
-				<span class="">© 2020 Издательство «Статут»</span>
-			</li>
-		</ul>
-	</div>
-
 	<div class="footer__center footer__center--desk">
-		<ul class="footer__center-list">
-			<span class="footer__center-title">Покупателям</span>
-			<li class="footer__center-link"><a href="#">Наша почта</a></li>
-			<li class="footer__center-link"><a href="#">Оплата и доставка</a></li>
-			<li class="footer__center-link"><a href="#">Вопросы и ответы</a></li>
-		</ul>
-		<ul class="footer-info__list">
-			<span class="footer__center-title">Издательство</span>
-			<li class="footer__center-link"><a href="#">О компании</a></li>
-			<li class="footer__center-link"><a href="#">Авторам</a></li>
-			<li class="footer__center-link"><a href="#">Вакансии</a></li>
-			<li class="footer__center-link"><a href="#">Контакты</a></li>
-		</ul>
-		<ul class="footer-info__list">
-			<span class="footer__center-title">Книги</span>
-			<li class="footer__center-link"><a href="#">Все категории</a></li>
-			<li class="footer__center-link"><a href="#">Бестселлеры</a></li>
-			<li class="footer__center-link"><a href="#">Новинки</a></li>
-			<li class="footer__center-link"><a href="#">Скидки и акции</a></li>
-		</ul>
-		<ul class="footer-info__list">
-			<span class="footer__center-title">Прайс-лист</span>
-			<li class="footer__center-file">
-				<div class="footer__center-file-icon">
-					{% include '@assets/svg/file-icon.svg' %}
+		<div class="footer__center-block footer__center-block--toggle">
+			<h3 class="footer__center-block-title">Покупателям</h3>
+			<ul class="footer__center-block-list">
+				<li class="footer__center-block-link"><a href="#">Наша почта</a></li>
+				<li class="footer__center-block-link"><a href="#">Оплата и доставка</a></li>
+				<li class="footer__center-block-link"><a href="#">Вопросы и ответы</a></li>
+			</ul>
+		</div>
+		<div class="footer__center-block footer__center-block--toggle">
+		<h3 class="footer__center-block-title">Издательство</h3>
+			<ul class="footer__center-block-list">
+				<li class="footer__center-block-link"><a href="#">О компании</a></li>
+				<li class="footer__center-block-link"><a href="#">Авторам</a></li>
+				<li class="footer__center-block-link"><a href="#">Вакансии</a></li>
+				<li class="footer__center-block-link"><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="footer__center-block footer__center-block--toggle">
+			<h3 class="footer__center-block-title">Книги</h3>
+			<ul class="footer__center-block-list">
+				<li class="footer__center-block-link"><a href="#">Все категории</a></li>
+				<li class="footer__center-block-link"><a href="#">Бестселлеры</a></li>
+				<li class="footer__center-block-link"><a href="#">Новинки</a></li>
+				<li class="footer__center-block-link"><a href="#">Скидки и акции</a></li>
+			</ul>
+		</div>
+		<div class="footer__center-block footer__center-block--toggle">
+			<h3 class="footer__center-block-title">Прайс-лист</h3>
+			<ul class="footer__center-block-list">
+				<li class="footer__center-block-file">
+					<div class="footer__center-block-file-icon">
+						{% include '@assets/svg/file-icon.svg' %}
+					</div>
+					<div class="footer__center-block-file-text">
+						<a href="#">
+							<span class="footer__center-block-text-file-download">Скачать прайс-лист</span>
+							<span class="footer__center-block-text-file-type">PDF, 12 Mb</span>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__center-block footer__center-block--mob">
+						<a href="#">
+							<span class="footer__center-block-doc">Политика конфиденциальности</span>
+						</a>
+						<a href="#">
+							<span class="footer__center-block-doc">Договор оферты</span>
+						</a>
+					</div>
+				</li>
+			</ul>
+		<div class="footer__center-block footer__center-block--contacts">
+				<h3 class="footer__center-block-title footer__center-block-title--contacts">Телефон и Email</h3>
+					<div class="footer__center-block-data">
+						<div class="footer__center-block-link-icon">
+							{% include '@assets/svg/mail.svg' %}
+						</div>
+						<a href=mailto:“market@estatut.ru” class="footer__center-block-link-text">market@estatut.ru</a>
+						</div>
+					<div class="footer__center-block-data">
+						<div class="footer__center-block-link-icon">
+							{% include '@assets/svg/call.svg' %}
+						</div>
+						<a href="tel:12121" class="footer__center-block-link footer__center-block-link-tel">
+						8 (968) 660-65-50</a>
+						<div class="footer__center-block-data-icon">
+							{% include '@assets/svg/info-icon.svg' %}
+						</div>
+					</div>
 				</div>
-				<div class="footer__center-file-block">
-					<a href="#">
-						<span class="footer__center-file-block-download">Скачать прайс-лист</span>
-						<span class="footer__center-file-block-type">PDF, 12 Mb</span>
-					</a>
-				</div>
-			</li>
-		</ul>
-		<ul class="footer__center-list footer__center-list--contacts">
-			<span class="footer__center-title">Телефон и Email</span>
-			<li class="footer__center-link footer__center-link--contacts">
-				<div class="footer__center-link-icon">
-					{% include '@assets/svg/mail.svg' %}
-				</div>
-				<span class="footer-center-link-text">market@estatut.ru</span>
-			</li>
-			<li class="footer__center-link">
-				<div class="footer__center-link-icon">
-					{% include '@assets/svg/call.svg' %}
-				</div>
-				<span class="footer__center-link">8 (968) 660-65-50</span>
-			</li>
-		</ul>
+		</div>
 	</div>
 
 	<div class="footer__bottom">
 		<div class="footer__bottom-row">
 			<span class="footer__bottom-row-text">© 2020 Издательство «Статут»</span>
-			<span class="footer__bottom-row-text footer__bottom-row-text--address">ул. Лобачевского, 92, корп. 2 119454, г. Москва</span>
-			<span class="footer__bottom-row-text footer__bottom-row-text--policy">Политика конфиденциальности</span>
-			<span class="footer__bottom-row-text">Договор оферты</span>
+			<span class="footer__bottom-row-text footer__bottom-row-text--address">
+				ул. Лобачевского, 92, корп. 2 119454, г. Москва
+			</span>
+			<a href="#" class="footer__bottom-row-text footer__bottom-row-text--desk footer__bottom-row-text--policy">
+			Политика конфиденциальности
+			</a>
+			<a href="#" class="footer__bottom-row-text footer__bottom-row-text--desk">Договор оферты</a>
 		</div>
 	</div>
 </footer>

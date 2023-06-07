@@ -3,31 +3,31 @@
 	margin-top:10px;
 	width:100%;
 
-	@media(min-width:620px)
+	@include mq(620px)
 	{
 		display:flex;
 		flex-wrap:wrap;
 	}
 
-	@media(min-width:992px)
+	@include mq(992px)
 	{
 		justify-content:space-between;
 		margin-top:30px;
 	}
 }
-.services__block--star{@media(min-width:992px){order:3;}}
+.services__block--star{@include mq(992px){order:3;}}
 
-.services__block--bag{@media(min-width:992px){order:4;}}
+.services__block--bag{@include mq(992px){order:4;}}
 
-.services__block--card{@media(min-width:992px){order:2;}}
+.services__block--card{@include mq(992px){order:2;}}
 
-.services__block-right--star{@media(min-width:1200px){margin-left:-10px;}}
+.services__block-right--star{@include mq(1200px){margin-left:-10px;}}
 
-.services__block-right-bag{@media(min-width:1200px){margin-left:-15px;}}
+.services__block-right-bag{@include mq(1200px){margin-left:-15px;}}
 
-.services__block-right--card{@media(min-width:1200px){margin-left:-10px;}}
+.services__block-right--card{@include mq(1200px){margin-left:-10px;}}
 
-.services__block-right--clock{@media(min-width:1200px){margin-left:-20px;}}
+.services__block-right--clock{@include mq(1200px){margin-left:-20px;}}
 
 .services__block
 {
@@ -38,13 +38,13 @@
 	padding:38px 20px 0px 10px;
 	height:170px;
 
-	@media(min-width:620px)
+	@include mq(620px)
 	{
 		width:49%;
 		&:nth-child(2n){margin-left:2%;}
 	}
 
-	@media(min-width:992px)
+	@include mq(992px)
 	{
 		width:24%;
 		height:150px;
@@ -52,7 +52,7 @@
 		&:nth-child(2n){margin-left:0;}
 	}
 
-	@media(min-width:1200px)
+	@include mq(1200px)
 	{
 		width:263px;
 		max-height:150px;
@@ -62,16 +62,17 @@
 .services__block-left
 {
 	width:35%;
-	@media(min-width:1200px){width:auto;}
+	@include mq(1200px){width:auto;}
 }
-.services__block-left--bag{@media(min-width:1200px){width:80px;}}
+.services__block-left--bag{@include mq(1200px){width:80px;}}
 .services__block-left-img
 {
 	width:125px;
 	height:85px;
+	object-fit:cover;
 
-	@media(min-width:992px){margin-left:-20px;}
-	@media(min-width:1200px)
+	@include mq(992px){margin-left:-20px;}
+	@include mq(1200px)
 	{
 		margin-left:0;
 		height:80px;
@@ -81,7 +82,7 @@
 
 .services__block-img-right--bag
 {
-	@media(min-width:1200px)
+	@include mq(1200px)
 	{
 		width:110px;
 		height:80px;
@@ -94,7 +95,7 @@
 	width:65%;
 	padding-top:10px;
 
-	@media(min-width:1200px){width:auto;}
+	@include mq(1200px){width:auto;}
 }
 
 .services__block-right-title
@@ -105,9 +106,9 @@
 	letter-spacing: -0.3px;
 	color: #1C294D;
 
-	@media(min-width:992px){font-size:14px;}
+	@include mq(992px){font-size:14px;}
 
-	@media(min-width:1200px){font-size:16px;}
+	@include mq(1200px){font-size:16px;}
 }
 
 .services__block-right-text
@@ -118,7 +119,7 @@
 	color: rgba(28, 41, 77, 0.5);
 	display:block;
 
-	@media(min-width:992px)
+	@include mq(992px)
 	{
 		font-size:12px;
 		line-height:19px;

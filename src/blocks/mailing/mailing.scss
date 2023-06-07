@@ -3,7 +3,7 @@
 	display:flex;
 	position:relative;
 
-	@media(min-width:992px){margin:27px auto 30px auto;}
+	@include mq(992px){margin:27px auto 30px auto;}
 }
 
 .mailing__info
@@ -14,7 +14,7 @@
 	position:relative;
 	padding:20px 10px;
 
-	@media(min-width:992px)
+	@include mq(992px)
 	{
 		display:flex;
 		padding:40px 45px 35px 45px;
@@ -30,7 +30,7 @@
 	z-index:1;
 	left:65px;
 	top:20px;
-	@media(min-width:992px)
+	@include mq(992px)
 	{
 		top:40px;
 		left:100px;
@@ -63,11 +63,11 @@
 	line-height: 20px;
 	color: rgba(28, 41, 77, 0.5);
 
-	@media(min-width:480px){max-width:418px;}
+	@include mq(480px){max-width:418px;}
 
-	@media(min-width:768px){margin:15 10px 0 14px;}
+	@include mq(768px){margin:15 10px 0 14px;}
 
-	@media(min-width:992px){margin:-10px 10px 0 14px}
+	@include mq(992px){margin:-10px 10px 0 14px}
 }
 
 .mailing__info-btn
@@ -82,7 +82,7 @@
 	line-height: 20px;
 	color: #FFFFFF;
 
-	@media(min-width:480px){max-width:137px;}
+	@include mq(480px){max-width:137px;}
 
-	@media(min-width:992px){margin-top:-10px;}
+	@include mq(992px){margin-top:-10px;}
 }

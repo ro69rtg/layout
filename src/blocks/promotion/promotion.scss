@@ -4,13 +4,13 @@
 	font-family:"GoshaSans";
 	z-index:1;
 
-	@media(min-width:768px)
+	@include mq(768px)
 	{
 		width:48%;
 		margin-left:2%;
 		margin-top:0;
 	}
-	@media(min-width:992px)
+	@include mq(992px)
 	{
 		display:flex;
 		margin-top:-133px;
@@ -20,7 +20,7 @@
 		display:block;
 		margin-left:0;
 	}
-	@media(min-width:1200px)
+	@include mq(1200px)
 	{
 		display:flex;
 		margin-top:-143px;
@@ -42,7 +42,7 @@
 
 	&:first-child{margin-bottom:10px;}
 
-	@media(min-width:768px)
+	@include mq(768px)
 	{
 		margin:0 30px 0 0;
 		width:100%;
@@ -50,7 +50,7 @@
 		padding:20px 25px;
 	}
 
-	@media(min-width:1200px){width:360px;}
+	@include mq(1200px){width:360px;}
 }
 
 .promotion__block-row
@@ -65,7 +65,7 @@
 .promotion__block-one{
 	background: #6D378F;
 
-	@media(min-width:350px){height:140px;}
+	@include mq(350px){height:140px;}
 }
 
 .promotion__block-two{background: #FFD8EF;}
@@ -86,13 +86,13 @@
 	left: 25px;
 	bottom: 10px;
 
-	@media(min-width:768px)
+	@include mq(768px)
 	{
 		left:20px;
 		bottom:5px;
 	}
 
-	@media(min-width:992px){bottom:0;}
+	@include mq(992px){bottom:0;}
 }
 
 .promotion__block-text

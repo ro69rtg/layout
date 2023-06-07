@@ -18,6 +18,7 @@
 @import '@b/header/header.scss';
 @import '@b/banner/banner.scss';
 @import '@b/slider/slider.scss';
+@import '@b/slider-block/slider-block.scss';
 @import '@b/promotion/promotion.scss';
 @import '@b/cards/cards.scss';
 @import '@b/card/card.scss';
@@ -60,10 +61,10 @@ body
 {
 	width:100%;
 	padding:0 10px;
-	@media(min-width:380px)
+	@include mq(380px)
 	{
 		max-width:1140px;
 	}
-	@media(min-width:992px){padding:0 20px;}
-	@media(min-width:1160px){padding:0;}
+	@include mq(992px){padding:0 20px;}
+	@include mq(1160px){padding:0;}
 }
